@@ -10,15 +10,42 @@
 
 <body>
     <script>
-        /*V = r2 * π * H*/
         
-        let r = parseFloat(prompt("Molim vas ukucajte poluprecnik valjka:", 0));
 
-        let h = parseFloat(prompt("Molim vas ukucajte visinu valjka:", 0));
+        var numberA = prompt("Please enter number A:");
+       
+        var numberC = prompt("Please enter operation signs:");
+       
+        var numberB = prompt("Please enter number B:");
+        
+        var result = myFunction(numberA, numberB, numberC);
 
-        let v = Math.pow(r, 2) * Math.PI * h;
+        function myFunction(a, b, c){   
+        if (c == "+") {
+            return parseInt(a) + parseInt(b);
+        }  
+         else if (c == "-") {
+            return parseInt(a) - parseInt(b);
+        }  
+         else if (c == "/") {
+            return parseInt(a) / parseInt(b);
+        }  
+         else {
+            return parseInt(a) * parseInt(b);
+        }
+            
+        }
 
-        alert("Povrsina valjka je " + v.toFixed(2));
+       alert ("sum is : " + result);
+
+
+
+       
+           
+        
+        
+                       
+        
        
     
     </script>
